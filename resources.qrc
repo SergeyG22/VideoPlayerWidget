@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>icon/star.png</file>
+        <file>icon/minus.png</file>
+        <file>icon/plus.png</file>
+        <file>icon/blue_small_star.png</file>
+        <file>icon/close.png</file>
+        <file>icon/open.png</file>
+        <file>icon/small_star.png</file>
+        <file>icon/cam.png</file>
+    </qresource>
+</RCC>
