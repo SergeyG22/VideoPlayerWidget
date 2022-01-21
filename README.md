@@ -65,3 +65,4 @@ nmake Release
 [Minus] - delete frame (to delete, select the frame)
 ```
 
+### Preview
