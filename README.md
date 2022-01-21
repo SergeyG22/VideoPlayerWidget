@@ -56,8 +56,5 @@ nmake Release
 
 ### Button assignment
 
-  ```
-  
-  
-  ```
+
 
