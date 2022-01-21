@@ -55,14 +55,13 @@ nmake Release
 ```
 
 ### Button assignment
-:heavy_plus_sign: :heavy_minus_sign: :small_red_triangle: :small_red_triangle_down: :star:
-```
-[Plus] - add a frame
-[Triangle] - hide frame
-[Inverted triangle] - show frame
-[Small star] - make the frame a priority
-[Upper small star] - open-close a priority frame
-[Minus] - delete frame (to delete, select the frame)
-```
+
+:heavy_plus_sign:[Plus] - add a frame<br>
+:small_red_triangle:[Triangle] - hide frame<br>
+:small_red_triangle_down:[Inverted triangle] - show frame<br>
+:star:[Small star] - make the frame a priority<br>
+:star:[Upper small star] - open-close a priority frame<br>
+:heavy_minus_sign:[Minus] - delete frame (to delete, select the frame)<br>
+
 
 ### Preview
