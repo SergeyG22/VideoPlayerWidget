@@ -65,3 +65,5 @@ nmake Release
 
 
 ### Preview
+
+![hippo](https://github.com/SergeyG22/VideoPlayerWidget/blob/master/resource/animation.git/animation.gif)
