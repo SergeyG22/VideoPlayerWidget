@@ -8,10 +8,10 @@ Frame::Frame(QWidget *parent): QWidget(parent){
     lcd_clock->showTime();
     lcd_timer->move(65,125);
     lcd_timer->showTimer();      
-    priority_button = new QPushButton(QIcon(":/new/prefix1/icon/small_star.png"), "", this);
+    priority_button = new QPushButton(QIcon(":/new/prefix1/resource/icon/small_star.png"), "", this);
     priority_button->setFixedSize(30,30);
     priority_button->move(500,4);
-    hide_button = new QPushButton(QIcon(":/new/prefix1/icon/open.png"), "", this);
+    hide_button = new QPushButton(QIcon(":/new/prefix1/resource/icon/open.png"), "", this);
     hide_button->setFixedSize(30,30);
     hide_button->move(540,4);
     this->setStyleSheet("background-color: rgba(252, 255, 0, 70%);");
@@ -34,7 +34,7 @@ void Frame::hideFrame() {
 }
 
 void Frame::openFrame(){
-    hide_button->setIcon(QIcon(":/new/prefix1/icon/open.png"));
+    hide_button->setIcon(QIcon(":/new/prefix1/resource/icon/open.png"));
     show_frame = false;
     resizeFrame(this->size().width(),350);
 
@@ -45,21 +45,21 @@ void Frame::openFrame(){
 }
 
 void Frame::closeFrame(){
-    hide_button->setIcon(QIcon(":/new/prefix1/icon/close.png"));
+    hide_button->setIcon(QIcon(":/new/prefix1/resource/icon/close.png"));
     show_frame = true;
     resizeFrame(this->size().width(),40);
 
     int width_main_window = main_window_ptr->size().width();
     int height_main_window = main_window_ptr->size().height() - 310;
     resizeMainWindow(width_main_window,height_main_window);
-    movingWidgetsToСlosedWidget();
+    movingWidgetsToClosedWidget();
 }
 
 void Frame::resizeMainWindow(int w,int h){
     main_window_ptr->resize(w,h);
 }
 
-void Frame::movingWidgetsToСlosedWidget(){
+void Frame::movingWidgetsToClosedWidget(){
     QObjectList children = main_window_ptr->children();
     bool following_this_frame = false;
     foreach(QObject *child, children) {
@@ -103,10 +103,10 @@ bool Frame::getPriority()const{
 
 void Frame::setPriority(){
     if(priority){
-        priority_button->setIcon(QIcon(":/new/prefix1/icon/small_star.png"));
+        priority_button->setIcon(QIcon(":/new/prefix1/resource/icon/small_star.png"));
         priority = false;
     }else{
-        priority_button->setIcon(QIcon(":/new/prefix1/icon/blue_small_star.png"));
+        priority_button->setIcon(QIcon(":/new/prefix1/resource/icon/blue_small_star.png"));
         priority = true;
     }
 }

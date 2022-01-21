@@ -15,21 +15,22 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-SOURCES += \
-    clock.cpp \
-    frame.cpp \
-    main.cpp \
-    mainwindow.cpp \
-    topbar.cpp
+INCLUDEPATH += $$PWD/include
 
-HEADERS += \
-    clock.h \
-    frame.h \
-    mainwindow.h \
-    topbar.h
+SOURCES += src/mainwindow.cpp \
+           src/main.cpp \
+           src/clock.cpp \
+           src/frame.cpp \
+           src/topbar.cpp \
 
-FORMS += \
-    mainwindow.ui
+HEADERS += include/mainwindow.h \
+           include/ui_mainwindow.h \
+           include/frame.h \
+           include/topbar.h \
+           include/clock.h \
+
+FORMS += ui/mainwindow.ui \
+
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

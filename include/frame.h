@@ -8,6 +8,7 @@
 #include <QScrollBar>
 #include <QPainter>
 #include <QTimer>
+#include <memory>
 #include "clock.h"
 
 
@@ -26,7 +27,7 @@ public:
     void openFrame();
     void closeFrame();
     void resizeFrame(int,int);
-    void movingWidgetsToСlosedWidget();
+    void movingWidgetsToClosedWidget();
     void movingWidgetsFromOpenedWidget();
     void resizeMainWindow(int,int);
     bool getPriority()const;
